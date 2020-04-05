@@ -1,0 +1,20 @@
+
+.navBarContainer {
+    font-size: 2rem;
+    background: #676e758c;
+    color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 30vw;
+}
+
+@media (max-width: 640px) {
+    .navBarContainer {
+        font-size: 2rem;
+        background: #9ea5ab4d;
+        color: aliceblue;
+        display: flex;
+        justify-content: flex-end;
+        padding: 1rem;
+    }
+}

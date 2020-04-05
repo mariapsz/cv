@@ -1,0 +1,21 @@
+
+body {
+    background-image: url("./zorza.jpg");
+    background-size: cover;
+    margin: 0;
+    font-size: 16px;
+}
+
+@media (max-width: 1050px) {
+    body {
+        background: #040308  url(./zorza.jpg) no-repeat;
+        background-position-y: 40vh;
+    }
+}
+
+@media (max-width: 640px) {
+    body {
+        background-size: auto;
+    }
+}
+

@@ -1,26 +1,41 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+} from "react-router-dom";
+import {ProjectsContainer} from "./components/ProjectsContainer";
+import {TechStack} from "./components/TechStack";
+import {Contact} from "./components/Contact";
+import {
+    ROUTE_PATH_CONTACT,
+    ROUTE_PATH_PROJECTS,
+    ROUTE_PATH_TECH_STACK
+} from "./config";
+import {AppContainer} from "./components/AppContainer";
+import "./components/AppContainer.css";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <Router>
+            <AppContainer>
+                <Switch>
+                    <Route exact path='/'>
+                        <ProjectsContainer/>
+                    </Route>
+                    <Route path={ROUTE_PATH_PROJECTS}>
+                        <ProjectsContainer/>
+                    </Route>
+                    <Route path={ROUTE_PATH_TECH_STACK}>
+                        <TechStack/>
+                    </Route>
+                    <Route path={ROUTE_PATH_CONTACT}>
+                        <Contact/>
+                    </Route>
+                </Switch>
+            </AppContainer>
+        </Router>
+    );
 }
 
 export default App;

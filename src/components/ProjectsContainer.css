@@ -1,0 +1,13 @@
+.projectsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+@media (min-width: 1050px) {
+    .projectsContainer {
+        flex-direction: row;
+        justify-content: center;
+    }
+}
