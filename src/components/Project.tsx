@@ -1,14 +1,16 @@
-import React from "react";
-import './Project.css';
-import {IProject} from "../interfaces/IProject";
+import React from 'react';
+import '../styles/Project.css';
+import {IProject} from '../interfaces/IProject';
 
 export const Project = (props: IProject) => {
-    return <div className='projectContainer'>
-        <div className='name'>
-            {props.name}
-        </div>
-        <a href={props.url}>
-            <img src={require('./ticTacToe.png')}/>
+    return <div className='project'>
+        <a href={props.url} target='_blank' className='name'>
+            <div>
+                {props.name}
+            </div>
+        </a>
+        <a href={props.url} target='_blank'>
+            <img alt='Game screenshots' src={props.imgSrc}/>
         </a>
         <div className='description'>
             {props.description}

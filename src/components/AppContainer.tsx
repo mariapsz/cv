@@ -1,11 +1,12 @@
-import React from "react";
-import {Header} from "./Header";
+import React from 'react';
+import '../styles/AppContainer.css';
+import {NavBar} from "./NavBar";
 
 export const AppContainer = (props: any) => {
-  return <div>
-      <Header/>
-      <div>
-          {props.children}
-      </div>
-  </div>
+    return <div>
+        <NavBar/>
+        <div>
+            {props.children}
+        </div>
+    </div>
 };

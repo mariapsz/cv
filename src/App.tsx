@@ -13,7 +13,7 @@ import {
     ROUTE_PATH_TECH_STACK
 } from "./config";
 import {AppContainer} from "./components/AppContainer";
-import "./components/AppContainer.css";
+
 
 function App() {
     return (

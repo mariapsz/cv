@@ -1,0 +1,51 @@
+
+body {
+    background-image: url('/images/zorza.jpg');
+    background-size: cover;
+    margin: 0;
+    font-size: 16px;
+}
+
+.pageContentContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 2rem 8vw;
+    flex-wrap: wrap;
+}
+
+.text {
+    color: #d0d8d0;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    padding: 3rem;
+    background: #33343a91;
+    border: 1px solid #000;
+}
+
+@media (max-width: 1050px) {
+    body {
+        background: #040308 url('/images/zorza.jpg') no-repeat;
+        background-position-y: 40vh;
+    }
+
+    .pageContentContainer {
+        flex-direction: column;
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 640px) {
+    body {
+        background: #040308 url('/images/zorza_forMobile.jpg') no-repeat;
+        background-size: auto;
+    }
+
+    .text {
+        padding: 1rem;
+    }
+}
+
+
+

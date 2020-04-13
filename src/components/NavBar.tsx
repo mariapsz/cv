@@ -1,8 +1,12 @@
 import React, {useState} from 'react';
-import {NavBarItem} from "./NavBarItem";
-import './NavBar.css';
-import {PopupMenu} from "./PopupMenu";
-import {ROUTE_PATH_CONTACT, ROUTE_PATH_PROJECTS, ROUTE_PATH_TECH_STACK} from "../config";
+import {NavBarItem} from './NavBarItem';
+import {PopupMenu} from './PopupMenu';
+import '../styles/NavBar.css';
+import {
+    ROUTE_PATH_CONTACT,
+    ROUTE_PATH_PROJECTS,
+    ROUTE_PATH_TECH_STACK
+} from '../config';
 
 export const NavBar = () => {
     const [showPopupMenu, setShowPopupMenu] = useState(false);

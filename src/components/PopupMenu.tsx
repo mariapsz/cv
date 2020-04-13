@@ -1,7 +1,7 @@
-import React from "react";
-import './PopupMenu.css';
-import {NavBarItem} from "./NavBarItem";
-import {ROUTE_PATH_CONTACT, ROUTE_PATH_PROJECTS, ROUTE_PATH_TECH_STACK} from "../config";
+import React from 'react';
+import '../styles/PopupMenu.css';
+import {NavBarItem} from './NavBarItem';
+import {ROUTE_PATH_CONTACT, ROUTE_PATH_PROJECTS, ROUTE_PATH_TECH_STACK} from '../config';
 
 export const PopupMenu = (props: { handleClose: any }) => {
 
